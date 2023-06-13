@@ -107,12 +107,14 @@ footer{
     }
     .error_msg{
         /* left: 10rem; */
-        /* text-align: center */
+        text-align: center;
         top: 3.5rem;
         left: 50%;
         transform: translate(-50%,-50%);
         font-size: 15px;
         display: none;
+        width: 100%;
+        
 
     }
     input{
