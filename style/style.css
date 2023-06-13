@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+/* .b{
+    border: 1px solid red;
+} */
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main_component{
+    width: 50%;
+}
+
+.ping_image img{
+    width: 70px;
+    margin: 30px auto;
+     display: block;
+}
+.main_component>h1{
+     text-align: center;
+     font-weight: 300;
+     color: hsl(0, 0%, 59%);
+     /* margin-top: 30px; */
+
+}
+span{
+    font-weight: 700;
+    color: black;
+}
+.main_component>p{
+      text-align: center;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.566);
+      margin: 15px;
+}
+.cotainer{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-top: 18px;
+    position: relative;
+}
+.error_msg{
+    position: absolute;
+    color: hsl(354, 100%, 66%);
+    top: 3rem;
+    left: 1.5rem;
+    font-size: 12px;
+    display: none;
+}
+input{
+    width: 70%;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid hsl(223, 87%, 63%);
+
+    
+}
+button{
+    width: 25%;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+}
+.dashboard{
+    margin-top: 50px;
+
+}
+.dashboard img{
+    width: 100%;
+
+}
+footer{
+    margin-top: 60px;
+}
+.footer_p{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+@media (max-width:734px) {
+    .main_component{
+        width: 90%;
+        
+    }
+    .cotainer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .error_msg{
+        /* left: 10rem; */
+        /* text-align: center */
+        top: 3.5rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+        display: none;
+
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
